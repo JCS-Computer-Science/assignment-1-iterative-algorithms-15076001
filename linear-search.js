@@ -6,7 +6,14 @@ function linearSearch(array, searchTerm) {
 	 ** Return the index of the found element
 	 */
 
-	return null;
+
+for(let l=0; l< array.length; l++) {
+if(array[l] === searchTerm){
+return l
+}
+}
+
+return null;
 }
 
 module.exports = linearSearch;

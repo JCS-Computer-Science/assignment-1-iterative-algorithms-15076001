@@ -7,7 +7,29 @@ function selectionSort(array) {
 	 ** Continue like this until you have only one element left.
 	 */
 
-	return array;
-}
+	let a = array.length;
 
+
+
+	 for (let l = 0; l < a ;l++){
+		 let lowest = l;
+   
+		 for (let b = l + 1; b < a;b++) {
+         if (array[b] < array[lowest]) {
+          lowest = b;
+
+
+		 }
+
+
+		 }
+
+     if (lowest != l){
+      
+	;[array[l], array[lowest]]= [array[lowest], array[l]]
+       }
+	 }
+
+	 return array;
+}
 module.exports = selectionSort;
